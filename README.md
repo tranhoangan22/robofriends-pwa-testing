@@ -1,5 +1,7 @@
-# robofriends-pwa
-adding PWA capabilities to a react app
+# robofriends-pwa-testing
+Complete React Developer Testing in React Lesson
+
+with added PWA capabilities to a react app
 
 To run the project:
 
