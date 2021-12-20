@@ -16,8 +16,10 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
+    // normally `dispatch` accepts an action (here: `setSearchField(event.target.value)` ) which is a object with keys of `type` and `payload` => the action "is dispatched"
     onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
-    onRequestRobots: () => requestRobots(dispatch),
+    // `redux-thunk` allows for dispatching of a function (ie `requestRobots`) which will have access to the `dispatch` method and where asynchronous API calls are executed
+    onRequestRobots: () => dispatch(requestRobots()),
   };
 };
 

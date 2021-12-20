@@ -17,3 +17,7 @@ Run code coverage: run `npm test -- --coverage --watchAll`
 
 ## Note 
 There is an error when running `npm start`, which can be fixed: https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported
+
+nock issue fixes:
+	- debugging nock: `export DEBUG=nock.* && npm test ./src/actions.test.j`
+	- https://github.com/axios/axios/issues/2654
